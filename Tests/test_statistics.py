@@ -27,5 +27,9 @@ class MyTestCase(unittest.TestCase):
         variance = self.statistics.variance(self.testData)
         self.assertEqual(variance, 1)
 
+    def test_std_dev_calculator(self):
+        std_div = self.statistics.std_dev(self.testData)
+        self.assertEqual(std_div, 1)
+
 if __name__ == '__main__':
     unittest.main()
