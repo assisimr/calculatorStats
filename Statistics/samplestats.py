@@ -20,3 +20,9 @@ def sample_median(data, sample_size):
     for num in sample:
         total = addition(total, num)
     return division(total, num_values)
+
+def sample_mode(data, sample_size):
+
+    sample = getSample(data, sample_size)
+    num_values = sample
+    return max(num_values)
