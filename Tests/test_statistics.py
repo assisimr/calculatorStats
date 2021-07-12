@@ -1,5 +1,6 @@
 import unittest
 
+from Statistics.median import median
 from Statistics.statistics import Statistics
 
 
@@ -16,8 +17,9 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(mean, 5)
 
     def test_median_calculator(self):
-        mean = self.statistics.mean(self.testData)
-        self.assertEqual(mean, 5)
+        mean = self.statistics.median(self.testData)
+        self.assertEqual(median, 5)
+
 
 if __name__ == '__main__':
     unittest.main()
